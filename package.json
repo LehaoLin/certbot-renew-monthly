@@ -1,0 +1,23 @@
+{
+  "name": "certbot-renew-monthly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LehaoLin/certbot-renew-monthly.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LehaoLin/certbot-renew-monthly/issues"
+  },
+  "homepage": "https://github.com/LehaoLin/certbot-renew-monthly#readme",
+  "dependencies": {
+    "node-schedule": "^2.0.0"
+  }
+}

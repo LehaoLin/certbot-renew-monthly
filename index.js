@@ -10,22 +10,22 @@ var cmdStr1 = 'service nginx stop'
 var cmdStr2 = 'certbot renew --force-renewal'
 var comStr3 = 'service nginx start'
 
-var j = schedule.scheduleJob(rule, function(){
-    execSync(cmdStr1, function(err,stdout,stderr){
+var j = schedule.scheduleJob(rule, async() => {
+    await execSync(cmdStr1, function(err,stdout,stderr){
         if(err) {
             console.log(stderr);
         } else {
             console.log(stdout);
         }
     })
-    execSync(cmdStr2, function(err,stdout,stderr){
+    await execSync(cmdStr2, function(err,stdout,stderr){
         if(err) {
             console.log(stderr);
         } else {
             console.log(stdout);
         }
     })
-    execSync(comStr3, function(err,stdout,stderr){
+    await execSync(comStr3, function(err,stdout,stderr){
         if(err) {
             console.log(stderr);
         } else {
